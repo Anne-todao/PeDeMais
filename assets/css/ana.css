@@ -35,13 +35,13 @@ header img{
 
 .icons-pages a{
     text-decoration: none;
-    color: var(--verde-escuro);
+    color: var(--verde-agua-escuro);
     font-size: 16px;
     margin: 0 15px;
     transition: 0.3s;
 }
 .icons-pages a:hover{
-    color: var(--azul-escuro);
+    color: var(--verde-agua-escuro);
 }
 .icons-pages i{
     margin-right: 8px;
@@ -85,14 +85,10 @@ header img{
 }
 
 .card h1{
-    font-size: 1.5rem;
+    font-size: 21px;
     color: #6b9491;
-    border-radius: 10px;
-    padding: 5px;
-    width: 300px;
-    text-align: center;
-    margin-top: 10px;
-       
+    margin-top: 15px;
+    margin-left: -100px;
     
 
 }
@@ -140,6 +136,7 @@ header img{
       padding: 5px;
       width: 100px;
       text-align: center;
+      margin-left: 6px;
 }
 
 .estrelas{
@@ -159,6 +156,17 @@ header img{
     margin-left: -10px;
 }
 
+#preco4{
+    margin-left: -8px;
+   
+}
+
+#preco5{
+    margin-left: -20px;
+   
+}
+
+
 .buttom{
     text-align: center;
     margin-top: 20px;
@@ -176,7 +184,10 @@ header img{
     background-color: #9abfe5;
 }
 
-
+.fa-star{
+    color: gold;
+    margin-right: 2px;
+}
 
 .footer-content {
     display: flex;
