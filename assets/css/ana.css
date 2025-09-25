@@ -32,6 +32,7 @@ header img{
     height: auto;
     margin-left: -250px;
 }
+
 .icons-pages a{
     text-decoration: none;
     color: var(--verde-escuro);
@@ -63,7 +64,7 @@ header img{
 
 }
 .card{
-    background-color: #cee5e1;
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     margin: 1rem;
@@ -80,26 +81,29 @@ header img{
 .card img{
     width: 100%;
     border-radius: 40px;
+    
 }
+
 .card h1{
     font-size: 1.5rem;
     color: #6b9491;
-      border-radius: 10px;
-      padding: 5px;
-      width: 300px;
-      text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    width: 300px;
+    text-align: center;
+    margin-top: 10px;
        
     
 
 }
 .card p{
     font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 20px;
-    color: #266763;
+    color: #6b9491;
+    border-radius: 10px;
     padding: 5px;
-      width: 180px;
-      text-align: center;
+    width: 300px;
+    text-align: center;
+    
 
 }
 .banner{
@@ -142,6 +146,38 @@ header img{
     margin-left: -80px;
     margin-top: -23px;
 }
+
+.info{
+    margin-left: -60px;
+    margin-top:  20px;
+}
+#hotel{
+    margin-left: -30px;
+   
+}
+#preco{
+    margin-left: -10px;
+}
+
+.buttom{
+    text-align: center;
+    margin-top: 20px;
+}
+.buttom button{
+    padding: 10px 150px;
+    background-color: #6b9491;
+    color: var(--bege);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.buttom button:hover{
+    background-color: #9abfe5;
+}
+
+
+
 .footer-content {
     display: flex;
     justify-content: space-around;
