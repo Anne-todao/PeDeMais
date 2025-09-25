@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --verde-escuro: #004702;
     --verde-agua: #cee5e1;
-    --azul-escuro: #0068a5;
+    --verde-agua-escuro: #6b9491;
     --azul-claro: #9abfe5;
     --bege: #fdf8f1;
+    --texto-escuro: #4a4a4a;
+    --texto-claro: #8a8a8a;
+    --borda-card: #e0e0e0;
+    --sombra-leve: rgba(0, 0, 0, 0.08);
 }
 *{
    margin: 0;
@@ -54,46 +57,33 @@ header img{
     margin-right: -250px;
 }
 
-.container{
+.container, .container1{
+    width: 80%;
+    margin: auto;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-}
-.container1{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
+    margin-top: 30px;
 }
 
 .card{
-    border-radius: 10px;
-    border: 2px solid #6b9491;
-    padding: 1.5rem;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    flex: 1 1 250px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 300px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
 
 }
 .card:hover{
     transform: translateY(-10px);
     box-shadow: 0 8px 16px #6b9491;
 }
-
-.card img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-}
-.card h3{
+.card h1{
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
+    color: black;
+    border: none;
+    border-radius: 20px;
 }
 .card p{
     font-size: 1rem;
@@ -115,56 +105,67 @@ header img{
 h1{
     text-align: center;
     margin: 30px;
-    color: #114913;
+    color: black;
     line-height: 1.5;
 }
-button{
-    background-color: var(--verde-agua);
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-    color: var(--verde-escuro);
-    padding: 10px;
-    font-size: 16px;
+.card h1{
+        text-align: center;
+        margin: 30px;
+        color: black;
+        line-height: 1.5;
+        margin-top: -9px;
+    }
+main button{
     width: 100%;
+    padding: 10px;
     border: none;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
+    background-color: var(--verde-agua);
+    color:var(--verde-escuro);
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s;
 }
-button:hover{
-    background-color: #6b9491;
-    margin-top: auto;
-    margin-bottom: auto;
+main button:hover{
+    background-color: var(--azul-claro);
+    color: white;
+    border: 1px solid var(--azul-claro);
 }
 h5{
     text-align: center;
     margin: 10px;
-    color: #114913;
-    line-height: 1.5;
+    color: #000000;
+    line-height: 1.5rem;
+    font-size: 18px;
+    font-weight: normal;
+
 }
 h4{
     text-align: center;
     margin: 10px;
-    color: #114913;
-    line-height: 1.5;
+    line-height: 1.5rem;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: -30px;
+    padding-bottom: 20px;
 }
 .fim h2{
     text-align: center;
     margin: 30px;
-    color: #114913;
+    color: var(--verde-agua-escuro);
     line-height: 1.5;
-    background-color: var(--verde-agua);
+    background-color:var(--verde-agua);
     padding: 5px;
     border-radius: 5px;
     width: 25%;
     margin-left: 37.5%;
+    cursor: pointer;
 }
 .fim h2:hover{
-    background-color: #6b9491;
+    background-color: var(--azul-claro);
 }
 .card-content {
-    /* Centraliza o texto dentro da div de conteúdo */
     text-align: center; 
     margin-top: 15px;
 }
@@ -200,4 +201,85 @@ h4{
     padding: 16px 0;
     background-color: var(--verde-agua-escuro);
     color: var(--bege);
+    cursor: pointer;
+}
+main{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+main img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.img1, .img2, .img4, .img5, .img6, .img7, .img8, .img3{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+
+/*Responsividade*/
+@media (max-width: 900px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    header img{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .icons-pages{
+        margin: 0;
+    }
+    .container, .container1{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        height: auto;
+    }
+    .fim h2{
+        width: 80%;
+        margin-left: 10%;
+    }
+    main{
+        margin: 20px;
+    }
+}
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    header img{
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .icons-pages{
+        margin: 0;
+    }
+    .container, .container1{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: 80%;
+        height: auto;
+    }
+    .fim h2{
+        width: 80%;
+        margin-left: 10%;
+    }
+    main{
+        margin: 20px;
+    }
 }
