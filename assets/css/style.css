@@ -296,6 +296,11 @@ header img {
     background: #eee;
 }
 
+.fa-star{
+    color: gold;
+    margin-right: 2px;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-around;

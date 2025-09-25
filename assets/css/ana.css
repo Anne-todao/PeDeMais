@@ -19,39 +19,62 @@ body{
 
 
 
-header{
+header {
     background-color: var(--verde-agua);
     height: 120px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-header img{
-    width: 150px;
-    height: auto;
-    margin-left: -250px;
+    padding: 0 50px;
 }
 
-.icons-pages a{
+header img {
+    width: 150px;
+    height: auto;
+}
+
+.icons-pages a {
     text-decoration: none;
-    color: var(--verde-escuro);
+    color: var(--verde-agua-escuro);
     font-size: 16px;
     margin: 0 15px;
     transition: 0.3s;
 }
-.icons-pages a:hover{
-    color: var(--azul-escuro);
+
+.icons-pages a:hover {
+    color: var(--azul-claro);
 }
-.icons-pages i{
+
+.icons-pages i {
     margin-right: 8px;
 }
 
-.icons-pages{
+.icons-pages {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -250px;
+}
+
+/* --- Menu Hambúrguer (Novos Estilos) --- */
+
+#menu-toggle {
+    display: none; /* Esconde o checkbox */
+}
+
+.hamburger {
+    display: none; /* Esconde o ícone por padrão */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--verde-agua-escuro);
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
 
 /*minha parte*/
@@ -85,14 +108,10 @@ header img{
 }
 
 .card h1{
-    font-size: 1.5rem;
+    font-size: 21px;
     color: #6b9491;
-    border-radius: 10px;
-    padding: 5px;
-    width: 300px;
-    text-align: center;
-    margin-top: 10px;
-       
+    margin-top: 15px;
+    margin-left: -100px;
     
 
 }
@@ -140,6 +159,7 @@ header img{
       padding: 5px;
       width: 100px;
       text-align: center;
+      margin-left: 6px;
 }
 
 .estrelas{
@@ -159,6 +179,17 @@ header img{
     margin-left: -10px;
 }
 
+#preco4{
+    margin-left: -8px;
+   
+}
+
+#preco5{
+    margin-left: -20px;
+   
+}
+
+
 .buttom{
     text-align: center;
     margin-top: 20px;
@@ -176,7 +207,10 @@ header img{
     background-color: #9abfe5;
 }
 
-
+.fa-star{
+    color: gold;
+    margin-right: 2px;
+}
 
 .footer-content {
     display: flex;
@@ -210,4 +244,24 @@ header img{
     padding: 16px 0;
     background-color: var(--verde-agua-escuro);
     color: var(--bege);
+}
+
+
+@media (max-width: 800px) {
+  .icons-pages {
+    display: none;
+    flex-direction: column;
+    background: var(--verde-agua);
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  #menu-toggle:checked + .hamburger + .icons-pages {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
