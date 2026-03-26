@@ -23,7 +23,16 @@ body{
     background-color: var(--bege);
 }
 
-
+.tittle {
+    text-align: center;
+    margin-top: 60px;
+    color: #6b9491;
+}
+main h1{
+    text-align: center;
+    margin-top: 60px;
+    color: #6b9491;
+}
 
 header{
     background-color: var(--verde-agua);
