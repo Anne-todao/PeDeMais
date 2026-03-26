@@ -9,6 +9,8 @@
     --texto-claro: #8a8a8a;
     --borda-card: #e0e0e0;
     --sombra-leve: rgba(0, 0, 0, 0.08);
+    --verde-escuro: #2d4a47; 
+    --azul-escuro: #4a90e2;  
 }
 
 *{
@@ -22,41 +24,43 @@ body{
     background-color: var(--bege);
 }
 
-header{
-    background-color: var(--bege);
-    box-shadow: 0 2px 4px var(--sombra-leve);
-    padding: 10px 20px;
+header {
+    background-color: var(--verde-agua);
+    height: 120px;
     display: flex;
-    justify-content: center;
-    width: 100%;
-}
-header img{
-    width: 150px;
-    height: auto;
-    margin-left: -250px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 50px;
 }
 
-.icons-pages a{
+header img {
+    width: 150px;
+    height: auto;
+}
+
+
+.icons-pages a {
     text-decoration: none;
-    color: var(--verde-escuro);
+    color: var(--verde-agua-escuro);
     font-size: 16px;
     margin: 0 15px;
     transition: 0.3s;
 }
-.icons-pages a:hover{
-    color: var(--azul-escuro);
+
+.icons-pages a:hover {
+    color: var(--azul-claro);
 }
-.icons-pages i{
+
+.icons-pages i {
     margin-right: 8px;
 }
 
-.icons-pages{
+.icons-pages {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: -250px;
 }
-
 
 
 /*Anne - hospedagem*/ 
@@ -77,15 +81,18 @@ header img{
     margin-top: 30px;
 }
 .box{
-    width: 300px;
+     width: 300px;
+    background-color: white; /* Garante que o fundo do card seja limpo */
     border-radius: 10px;
     margin-bottom: 30px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--sombra-leve);
     transition: 0.3s;
+    overflow: hidden;
+    border: 1px solid transparent;
 }
 .box:hover{
-    transform: scale(1.05);
-    border:1px solid var(--azul-claro); ;
+    transform: scale(1.05); 
+    outline: 1px solid var(--azul-claro);
 }
 .pic-one, .pic-two, .pic-three, .pic-four, .pic-five, .pic-six, .pic-seven, .pic-eight{
     width: 100%;
@@ -110,7 +117,6 @@ button:hover{
     background-color: var(--azul-claro);
     color: white;
     border: 1px solid var(--azul-claro);
-    position: fixed;
 }
 .box h2{
     text-align: center;
@@ -134,6 +140,22 @@ main{
     margin-left: 8%;
     margin-right:8%;
 }
+main button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--verde-agua);
+    color:var(--verde-escuro);
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.3s;
+}
+main button:hover {
+    background-color: var(--azul-claro);
+    color: white;
+    border: 1px solid var(--azul-claro);}
 
 .footer-content {
     display: flex;
